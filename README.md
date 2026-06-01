@@ -8,41 +8,45 @@ The real source code, staff data and operational files are private. This reposit
 
 ![ShiftPlanner dashboard](assets/shiftplanner-dashboard.png)
 
-## Capabilities And Impact
+## Workflow, Functions And Impact
 
-![ShiftPlanner capabilities](assets/shiftplanner-capabilities.png)
+![ShiftPlanner workflow and capabilities](assets/shiftplanner-capabilities.png)
 
-## What This Project Solves
+## What This Project Does
 
-ShiftPlanner turns a manual Excel-heavy scheduling process into a guided workflow for creating, reviewing and exporting a weekly shift plan.
+ShiftPlanner turns a weekly, Excel-heavy scheduling process into a guided workflow: import requests, generate a first plan, review conflicts, approve exceptions and export the final schedule.
 
-The public screenshots are intentionally anonymized: no employee names, no exact staffing counts, no internal files and no private business data are shown.
+The public screenshots are intentionally anonymized. They do not show employee names, exact staffing numbers, internal Excel files, SharePoint paths or business-sensitive scheduling data.
 
-## Core Functions
+## Main Functions
 
-- Import employee lists from Excel or CSV files.
-- Import weekly constraints and requests from files, folders or synced SharePoint/OneDrive locations.
-- Detect the relevant week from filenames and load the correct constraint file.
-- Generate an automatic weekly schedule using coverage, rest, night-load and weekend rotation rules.
-- Review conflicts, missing coverage, blocked days, reserve duty and manual requests before approval.
-- Use recent history to support fair weekend and night-shift rotation.
-- Handle Jewish holidays and company holiday files with manual override when needed.
-- Support manual editing after automatic generation.
-- Create alternative schedule versions for the same week.
-- Export final schedules to PDF and Excel.
-- Share the schedule through normal team channels.
-- Backup and restore the full local planning state.
-- Package the system as a closed desktop application so users receive the product without source files.
+- Imports employee lists from Excel or CSV.
+- Imports weekly constraints from multiple files and stores them by week.
+- Reads synced SharePoint/OneDrive folders and refreshes the matching weekly constraint file.
+- Detects the relevant week from file names or file content.
+- Generates an automatic schedule using coverage, rest, night-load, weekend rotation and availability rules.
+- Supports alternative schedule generation for the same week.
+- Allows manual editing after automatic generation.
+- Supports buddy pairing between new and experienced staff, including conflict alerts.
+- Handles manual constraints: unavailable, prefer and must.
+- Handles Jewish and company holidays with manual override.
+- Uses recent history to support fair weekend rotation.
+- Shows alerts for missing coverage, rest issues, hard constraints and approval problems.
+- Provides tracking reports for submitted constraints, honored requests and shift load.
+- Exports the final schedule to PDF and Excel.
+- Supports sharing the final schedule through normal team channels.
+- Supports backup and restore of the full local planning state.
+- Can be distributed as a closed desktop app without exposing source files.
 
 ## Work Impact
 
 Estimated impact: **2-4 hours saved per weekly schedule cycle**.
 
-This is a conservative portfolio estimate, not a measured production KPI. The saving comes from reducing manual Excel merging, checking constraints by hand, validating weekend rotation, balancing night coverage and preparing final PDF/Excel outputs.
+This is a conservative portfolio estimate, not a measured production KPI. The time saving comes from reducing manual Excel merging, checking constraints by hand, validating weekend rotation, balancing night coverage, reviewing exceptions and preparing the final PDF/Excel output.
 
 ## My Work
 
-I built the scheduling interface, rule engine, import/export workflow, constraint handling, holiday logic, history-based rotation support, manual editing flow, backup/restore, closed app packaging and user documentation.
+I built the scheduling interface, optimization/rule engine, import/export workflow, constraint handling, holiday logic, history-based rotation support, buddy flow, manual editing flow, alerts, reports, backup/restore, closed app packaging and user documentation.
 
 ## Privacy And Access
 
