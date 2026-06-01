@@ -1,24 +1,28 @@
 # ShiftPlanner
 
-Public showcase for a private workforce scheduling application.
+**Case study:** a private workforce scheduling application for weekly planning, constraints, review and final delivery.
 
 The real source code, staff data and operational files are private. This repository contains only sanitized screenshots and a professional project explanation.
 
-## Product View
+## Product Screens
 
 ![ShiftPlanner dashboard](assets/shiftplanner-dashboard.png)
 
-## Workflow, Functions And Impact
-
 ![ShiftPlanner workflow and capabilities](assets/shiftplanner-capabilities.png)
 
-## What This Project Does
+## Problem
 
-ShiftPlanner turns a weekly, Excel-heavy scheduling process into a guided workflow: import requests, generate a first plan, review conflicts, approve exceptions and export the final schedule.
+Weekly shift planning can become a slow Excel-driven process: collecting employee constraints, checking coverage, balancing nights and weekends, handling holidays, reviewing exceptions and preparing the final schedule for sharing.
+
+The risk is not only time. Manual planning can miss constraints, create unfair rotation, overload specific people or require repeated corrections before approval.
+
+## Solution
+
+ShiftPlanner turns that process into a guided scheduling workflow: import requests, generate a first plan, review conflicts, approve exceptions, edit manually when needed and export the final schedule.
 
 The public screenshots are intentionally anonymized. They do not show employee names, exact staffing numbers, internal Excel files, SharePoint paths or business-sensitive scheduling data.
 
-## Main Functions
+## Key Features
 
 - Imports employee lists from Excel or CSV.
 - Imports weekly constraints from multiple files and stores them by week.
@@ -38,13 +42,13 @@ The public screenshots are intentionally anonymized. They do not show employee n
 - Supports backup and restore of the full local planning state.
 - Can be distributed as a closed desktop app without exposing source files.
 
-## Work Impact
+## Operational Impact
 
 Estimated impact: **2-4 hours saved per weekly schedule cycle**.
 
 This is a conservative portfolio estimate, not a measured production KPI. The time saving comes from reducing manual Excel merging, checking constraints by hand, validating weekend rotation, balancing night coverage, reviewing exceptions and preparing the final PDF/Excel output.
 
-## My Work
+## My Contribution
 
 I built the scheduling interface, optimization/rule engine, import/export workflow, constraint handling, holiday logic, history-based rotation support, buddy flow, manual editing flow, alerts, reports, backup/restore, closed app packaging and user documentation.
 
